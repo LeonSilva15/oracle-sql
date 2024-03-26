@@ -13,3 +13,7 @@ FROM dual;
 -- Using arithmetic operators
 SELECT last_name, salary, salary + 300
 FROM employees;
+
+-- Operator precedence
+SELECT last_name, salary, salary * 12, (100 + salary) * 12
+FROM employees;
