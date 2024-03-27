@@ -17,3 +17,7 @@ FROM employees;
 -- Operator precedence
 SELECT last_name, salary, salary * 12, (100 + salary) * 12
 FROM employees;
+
+-- Selecting a null value
+SELECT last_name, commission_pct
+FROM employees;
