@@ -21,3 +21,7 @@ FROM employees;
 -- Selecting a null value
 SELECT last_name, commission_pct
 FROM employees;
+
+-- Arithmetic operation on a null value
+SELECT last_name, commission_pct*100
+FROM employees;
