@@ -29,3 +29,7 @@ FROM employees;
 -- Using a column alias
 SELECT last_name, salary, salary * 12 AS annual_salary
 FROM employees;
+
+-- Using quotes to preserve column alias string format
+SELECT last_name AS name, salary, salary * 12 AS "Annual Salary!"
+FROM employees;
