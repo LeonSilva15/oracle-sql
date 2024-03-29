@@ -25,3 +25,7 @@ FROM employees;
 -- Arithmetic operation on a null value
 SELECT last_name, commission_pct*100
 FROM employees;
+
+-- Using a column alias
+SELECT last_name, salary, salary * 12 AS annual_salary
+FROM employees;
