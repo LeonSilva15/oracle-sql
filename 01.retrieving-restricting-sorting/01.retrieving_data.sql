@@ -33,3 +33,7 @@ FROM employees;
 -- Using quotes to preserve column alias string format
 SELECT last_name AS name, salary, salary * 12 AS "Annual Salary!"
 FROM employees;
+
+-- Concatenating
+SELECT last_name||job_id AS "Employees"
+FROM employees;
