@@ -37,3 +37,8 @@ FROM employees;
 -- Concatenating
 SELECT last_name||job_id AS "Employees"
 FROM employees;
+
+-- Adding space
+-- must be with single quotes
+SELECT last_name || ' ' || job_id AS employee_name
+FROM employees;
