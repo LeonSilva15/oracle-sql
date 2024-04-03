@@ -42,3 +42,7 @@ FROM employees;
 -- must be with single quotes
 SELECT last_name || ' ' || job_id AS employee_name
 FROM employees;
+
+-- Using CONCAT function
+SELECT CONCAT(last_name, CONCAT(' is a ', job_id)) AS "Employee Details"
+FROM employees;
