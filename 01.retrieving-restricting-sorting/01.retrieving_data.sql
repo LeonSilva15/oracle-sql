@@ -54,3 +54,7 @@ FROM employees;
 -- Using the q operator
 SELECT last_name || q'[ isn't a ]' || job_id
 FROM employees;
+
+-- Other characters can be used as q operator delimiters
+SELECT last_name || q'? isn't a ?' || job_id
+FROM employees;
