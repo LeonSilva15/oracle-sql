@@ -58,3 +58,6 @@ FROM employees;
 -- Other characters can be used as q operator delimiters
 SELECT last_name || q'? isn't a ?' || job_id
 FROM employees;
+
+SELECT last_name || q'! isn't a !' || job_id
+FROM employees;
