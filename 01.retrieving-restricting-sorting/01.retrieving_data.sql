@@ -50,3 +50,7 @@ FROM employees;
 -- Using literal character strings
 SELECT last_name || ' is a ' || job_id AS "Employee Details"
 FROM employees;
+
+-- Using the q operator
+SELECT last_name || q'[ isn't a ]' || job_id
+FROM employees;
