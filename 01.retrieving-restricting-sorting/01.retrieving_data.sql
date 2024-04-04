@@ -61,3 +61,6 @@ FROM employees;
 
 SELECT last_name || q'! isn't a !' || job_id
 FROM employees;
+
+-- Get rid of duplicate rows using DISTINCT
+SELECT DISTINCT department_id from employees;
