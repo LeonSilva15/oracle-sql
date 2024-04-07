@@ -67,3 +67,6 @@ SELECT DISTINCT department_id from employees;
 
 -- Describe a table
 DESCRIBE employees;
+
+-- Abbreviated form
+DESC employees;
