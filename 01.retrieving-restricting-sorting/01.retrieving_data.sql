@@ -64,3 +64,6 @@ FROM employees;
 
 -- Get rid of duplicate rows using DISTINCT
 SELECT DISTINCT department_id from employees;
+
+-- Describe a table
+DESCRIBE employees;
