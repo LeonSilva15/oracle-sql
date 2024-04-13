@@ -26,3 +26,8 @@ WHERE last_name = 'Abel';
 SELECT last_name, salary
 FROM employees
 WHERE salary BETWEEN 2500 AND 3500;
+
+-- Using the NOT operator to skip a range
+SELECT last_name, salary
+FROM employees
+WHERE salary NOT BETWEEN 2500 AND 3500;
