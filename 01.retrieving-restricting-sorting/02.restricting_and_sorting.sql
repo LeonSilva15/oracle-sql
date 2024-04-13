@@ -12,3 +12,12 @@ WHERE last_name = 'Whalen';
 SELECT last_name, job_id, department_id, hire_date
 FROM employees
 WHERE hire_date = '21-MAY-17';
+
+-- Using comparison operators
+SELECT last_name, salary
+FROM employees
+WHERE salary <= 3000;
+
+SELECT last_name, salary
+FROM employees
+WHERE last_name = 'Abel';
