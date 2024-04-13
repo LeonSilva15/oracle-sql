@@ -21,3 +21,8 @@ WHERE salary <= 3000;
 SELECT last_name, salary
 FROM employees
 WHERE last_name = 'Abel';
+
+-- Range condition using the BETWEEN operator
+SELECT last_name, salary
+FROM employees
+WHERE salary BETWEEN 2500 AND 3500;
