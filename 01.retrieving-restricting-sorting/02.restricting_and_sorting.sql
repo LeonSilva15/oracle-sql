@@ -31,3 +31,8 @@ WHERE salary BETWEEN 2500 AND 3500;
 SELECT last_name, salary
 FROM employees
 WHERE salary NOT BETWEEN 2500 AND 3500;
+
+-- Selecting from a list of values
+SELECT employee_id, last_name, salary, manager_id
+FROM employees
+WHERE manager_id IN (100, 101, 201);
