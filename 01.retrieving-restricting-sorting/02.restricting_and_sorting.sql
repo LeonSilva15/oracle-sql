@@ -41,3 +41,9 @@ WHERE manager_id IN (100, 101, 201);
 SELECT employee_id, last_name, salary, manager_id
 FROM employees
 WHERE manager_id = 100 OR manager_id = 101 OR manager_id = 201;
+
+-- Using the LIKE operator
+-- S as first character
+SELECT first_name
+FROM employees
+WHERE first_name LIKE 'S%';
