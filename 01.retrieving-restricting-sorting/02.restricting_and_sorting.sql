@@ -47,3 +47,8 @@ WHERE manager_id = 100 OR manager_id = 101 OR manager_id = 201;
 SELECT first_name
 FROM employees
 WHERE first_name LIKE 'S%';
+
+-- Capital H anywhere in te string
+SELECT first_name
+FROM employees
+WHERE first_name LIKE '%H%';
