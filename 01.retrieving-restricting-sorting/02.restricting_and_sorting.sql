@@ -36,3 +36,8 @@ WHERE salary NOT BETWEEN 2500 AND 3500;
 SELECT employee_id, last_name, salary, manager_id
 FROM employees
 WHERE manager_id IN (100, 101, 201);
+
+-- Using the OR operator instead of the list
+SELECT employee_id, last_name, salary, manager_id
+FROM employees
+WHERE manager_id = 100 OR manager_id = 101 OR manager_id = 201;
