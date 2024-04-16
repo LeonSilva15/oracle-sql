@@ -52,3 +52,8 @@ WHERE first_name LIKE 'S%';
 SELECT first_name
 FROM employees
 WHERE first_name LIKE '%H%';
+
+-- n as the third character followed by any string
+SELECT first_name
+FROM employees
+WHERE first_name LIKE '__n%';
