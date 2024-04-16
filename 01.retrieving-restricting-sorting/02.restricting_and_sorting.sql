@@ -57,3 +57,8 @@ WHERE first_name LIKE '%H%';
 SELECT first_name
 FROM employees
 WHERE first_name LIKE '__n%';
+
+-- Escape a wildcard character to be used as a string literal
+SELECT first_name, salary, department_id, job_id
+FROM employees
+WHERE job_id LIKE 'SA/_%' ESCAPE '/';
