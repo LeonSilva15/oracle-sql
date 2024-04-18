@@ -62,3 +62,8 @@ WHERE first_name LIKE '__n%';
 SELECT first_name, salary, department_id, job_id
 FROM employees
 WHERE job_id LIKE 'SA/_%' ESCAPE '/';
+
+-- Selecting a row with a NULL value
+SELECT first_name, manager_id
+FROM employees
+WHERE manager_id IS NULL;
