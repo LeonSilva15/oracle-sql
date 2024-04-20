@@ -67,3 +67,8 @@ WHERE job_id LIKE 'SA/_%' ESCAPE '/';
 SELECT first_name, manager_id
 FROM employees
 WHERE manager_id IS NULL;
+
+-- Selecting using the NOT operator
+SELECT first_name, manager_id
+FROM employees
+WHERE manager_id IS NOT NULL;
