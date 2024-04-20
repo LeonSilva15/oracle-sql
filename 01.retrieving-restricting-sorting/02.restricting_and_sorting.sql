@@ -72,3 +72,8 @@ WHERE manager_id IS NULL;
 SELECT first_name, manager_id
 FROM employees
 WHERE manager_id IS NOT NULL;
+
+-- Selecting using the OR operator
+SELECT last_name, manager_id, department_id, salary
+FROM employees
+WHERE salary=10000 OR department_id=90;
