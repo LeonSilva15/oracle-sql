@@ -82,3 +82,10 @@ WHERE salary=10000 OR department_id=90;
 SELECT last_name, manager_id, department_id, salary
 FROM employees
 WHERE salary=24000 AND department_id=90;
+
+-- Specifying the precedence with parentheses
+SELECT last_name, manager_id, department_id, salary
+FROM employees
+WHERE (department_id = 60
+OR department_id = 80)
+AND salary > 10000;
