@@ -98,3 +98,8 @@ ORDER BY hire_date;
 SELECT last_name, job_id, department_id, hire_date
 FROM employees
 ORDER BY hire_date DESC;
+
+-- Combining orders
+SELECT last_name, job_id, department_id, hire_date
+FROM employees
+ORDER BY department_id, manager_id DESC;
