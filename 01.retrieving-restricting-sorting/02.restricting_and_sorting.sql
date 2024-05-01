@@ -89,3 +89,12 @@ FROM employees
 WHERE (department_id = 60
 OR department_id = 80)
 AND salary > 10000;
+
+-- Sorting by hire date using ORDER BY
+SELECT last_name, job_id, department_id, hire_date
+FROM employees
+ORDER BY hire_date;
+
+SELECT last_name, job_id, department_id, hire_date
+FROM employees
+ORDER BY hire_date DESC;
