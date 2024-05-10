@@ -103,3 +103,104 @@ ORDER BY hire_date DESC;
 SELECT last_name, job_id, department_id, hire_date
 FROM employees
 ORDER BY department_id, manager_id DESC;
+
+-- Sorting using the column number
+SELECT last_name, job_id, department_id, hire_date
+FROM employees
+ORDER BY 2 ASC, 3 DESC;
+
+-- Sorting using the column alias
+SELECT last_name AS name, job_id, department_id, hire_date
+FROM employees
+ORDER BY name, 3 DESC;
+
+-- Sorting using the quoted column alias
+-- every instance of the alias must be quoted
+SELECT last_name AS "name", job_id, department_id, hire_date
+FROM employees
+ORDER BY "name", 3 DESC;
+
+-- Previous way to limit the results using a subquery and ROWNUM
+SELECT last_name, salary FROM (
+    SELECT last_name, salary
+    FROM employees
+    ORDER BY salary DESC
+) WHERE ROWNUM < 6;
+
+-- Limit using the row limit clause
+SELECT last_name, salary
+FROM employees
+ORDER BY salary DESC
+FETCH FIRST 5 ROWS ONLY;
+
+-- Getting limited rows including ties
+SELECT last_name, salary
+FROM employees
+ORDER BY salary DESC
+FETCH FIRST 2 ROWS WITH TIES;
+
+-- Skipping and limiting rows
+SELECT last_name, salary
+FROM employees
+ORDER BY salary DESC
+OFFSET 5 ROWS
+FETCH NEXT 5 ROWS ONLY;
+
+-- Fetching the first 5% rows
+SELECT last_name, salary
+FROM employees
+ORDER BY salary DESC
+FETCH FIRST 5 PERCENT ROWS ONLY;
+
+-- Using dynamic condition with a substitution variable
+-- This will also display the original syntax
+SELECT last_name, salary, department_id
+FROM employees
+WHERE department_id = &dept_id;
+
+-- Removing the syntax display using the SET operator
+SET VERIFY OFF
+SELECT last_name, salary, department_id
+FROM employees
+WHERE department_id = &dept_id;
+
+-- Including the executed script as part of the output
+SET ECHO ON
+SELECT last_name, salary, department_id
+FROM employees
+WHERE department_id = &dept_id;
+
+-- Using dynamic column name
+-- we will be prompet twice if we don't add the double ampersand
+SELECT last_name, &&column, department_id
+FROM employees
+ORDER BY &column;
+
+-- Remove a stored substitution variale value
+UNDEFINE column
+
+-- Using single quotes to receive a string value
+-- otherwise it looks for it as an identifier
+SELECT last_name, hire_date, department_id
+FROM employees
+WHERE last_name = '&lname';
+
+-- Specifying column names, expressions, and text
+UNDEFINE column_name condition order_column
+SELECT employee_id, last_name, job_id, &column_name -- salary
+FROM employees
+WHERE &condition -- salary > 1500
+ORDER BY &order_column; -- last_name
+
+-- Defining a variable value using the DEFINE clause
+DEFINE employee_num = 200 
+SELECT employee_id, last_name, salary, department_id
+FROM employees
+WHERE employee_id = &employee_num;
+UNDEFINE employee_num
+
+-- Using the VERIFY command
+SET VERIFY ON
+SELECT employee_id, last_name, salary, department_id
+FROM employees
+WHERE employee_id = &employee_num;
