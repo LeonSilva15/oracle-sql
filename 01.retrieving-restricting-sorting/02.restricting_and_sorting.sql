@@ -119,3 +119,10 @@ ORDER BY name, 3 DESC;
 SELECT last_name AS "name", job_id, department_id, hire_date
 FROM employees
 ORDER BY "name", 3 DESC;
+
+-- Previous way to limit the results using a subquery and ROWNUM
+SELECT last_name, salary FROM (
+    SELECT last_name, salary
+    FROM employees
+    ORDER BY salary DESC
+) WHERE ROWNUM < 6;
