@@ -126,3 +126,9 @@ SELECT last_name, salary FROM (
     FROM employees
     ORDER BY salary DESC
 ) WHERE ROWNUM < 6;
+
+-- Limit using the row limit clause
+SELECT last_name, salary
+FROM employees
+ORDER BY salary DESC
+FETCH FIRST 5 ROWS ONLY;
