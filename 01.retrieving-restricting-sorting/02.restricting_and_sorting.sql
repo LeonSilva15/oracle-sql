@@ -132,3 +132,9 @@ SELECT last_name, salary
 FROM employees
 ORDER BY salary DESC
 FETCH FIRST 5 ROWS ONLY;
+
+-- Getting limited rows including ties
+SELECT last_name, salary
+FROM employees
+ORDER BY salary DESC
+FETCH FIRST 2 ROWS WITH TIES;
