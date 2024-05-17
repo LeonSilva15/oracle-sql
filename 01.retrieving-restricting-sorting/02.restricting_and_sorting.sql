@@ -138,3 +138,10 @@ SELECT last_name, salary
 FROM employees
 ORDER BY salary DESC
 FETCH FIRST 2 ROWS WITH TIES;
+
+-- Skipping and limiting rows
+SELECT last_name, salary
+FROM employees
+ORDER BY salary DESC
+OFFSET 5 ROWS
+FETCH NEXT 5 ROWS ONLY;
