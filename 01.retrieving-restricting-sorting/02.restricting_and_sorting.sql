@@ -145,3 +145,9 @@ FROM employees
 ORDER BY salary DESC
 OFFSET 5 ROWS
 FETCH NEXT 5 ROWS ONLY;
+
+-- Fetching the first 5% rows
+SELECT last_name, salary
+FROM employees
+ORDER BY salary DESC
+FETCH FIRST 5 PERCENT ROWS ONLY;
