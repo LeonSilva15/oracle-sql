@@ -157,3 +157,9 @@ FETCH FIRST 5 PERCENT ROWS ONLY;
 SELECT last_name, salary, department_id
 FROM employees
 WHERE department_id = &dept_id;
+
+-- Removing the syntax display using the SET operator
+SET VERIFY OFF
+SELECT last_name, salary, department_id
+FROM employees
+WHERE department_id = &dept_id;
