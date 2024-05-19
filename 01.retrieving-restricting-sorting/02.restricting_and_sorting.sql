@@ -151,3 +151,9 @@ SELECT last_name, salary
 FROM employees
 ORDER BY salary DESC
 FETCH FIRST 5 PERCENT ROWS ONLY;
+
+-- Using dynamic condition with a substitution variable
+-- This will also display the original syntax
+SELECT last_name, salary, department_id
+FROM employees
+WHERE department_id = &dept_id;
