@@ -163,3 +163,9 @@ SET VERIFY OFF
 SELECT last_name, salary, department_id
 FROM employees
 WHERE department_id = &dept_id;
+
+-- Including the executed script as part of the output
+SET ECHO ON
+SELECT last_name, salary, department_id
+FROM employees
+WHERE department_id = &dept_id;
