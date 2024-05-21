@@ -169,3 +169,9 @@ SET ECHO ON
 SELECT last_name, salary, department_id
 FROM employees
 WHERE department_id = &dept_id;
+
+-- Using dynamic column name
+-- we will be prompet twice if we don't add the double ampersand
+SELECT last_name, &&column, department_id
+FROM employees
+ORDER BY &column;
