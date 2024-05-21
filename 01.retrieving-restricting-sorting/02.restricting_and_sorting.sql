@@ -175,3 +175,6 @@ WHERE department_id = &dept_id;
 SELECT last_name, &&column, department_id
 FROM employees
 ORDER BY &column;
+
+-- Removing a stored substitution variale value
+UNDEFINE column
