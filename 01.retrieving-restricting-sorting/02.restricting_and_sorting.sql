@@ -178,3 +178,9 @@ ORDER BY &column;
 
 -- Removing a stored substitution variale value
 UNDEFINE column
+
+-- Using single quotes to receive a string value
+-- otherwise it looks for it as an identifier
+SELECT last_name, hire_date, department_id
+FROM employees
+WHERE last_name = '&lname';
