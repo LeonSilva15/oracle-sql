@@ -184,3 +184,10 @@ UNDEFINE column
 SELECT last_name, hire_date, department_id
 FROM employees
 WHERE last_name = '&lname';
+
+-- Specifying column names, expressions, and text
+UNDEFINE column_name condition order_column
+SELECT employee_id, last_name, job_id, &column_name -- salary
+FROM employees
+WHERE &condition -- salary > 1500
+ORDER BY &order_column; -- last_name
