@@ -191,3 +191,10 @@ SELECT employee_id, last_name, job_id, &column_name -- salary
 FROM employees
 WHERE &condition -- salary > 1500
 ORDER BY &order_column; -- last_name
+
+-- Defining a variable value using the DEFINE clause
+DEFINE employee_num = 200 
+SELECT employee_id, last_name, salary, department_id
+FROM employees
+WHERE employee_id = &employee_num;
+UNDEFINE employee_num
