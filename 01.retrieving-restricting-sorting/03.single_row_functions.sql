@@ -7,3 +7,8 @@ FROM dual;
 SELECT UPPER('Hello world')
 FROM dual;
 -- HELLO WORLD
+
+-- Capitalizing every initial letter
+SELECT INITCAP('Hello world')
+FROM dual;
+-- Hello World
