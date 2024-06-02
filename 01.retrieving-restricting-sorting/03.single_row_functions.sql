@@ -22,3 +22,8 @@ FROM dual;
 SELECT CONCAT(CONCAT('Hello', ' '), 'world')
 FROM dual;
 -- Hello world
+
+-- Getting a substring starting on the second character
+SELECT SUBSTR('Hello world', 2)
+FROM dual;
+-- ello world
