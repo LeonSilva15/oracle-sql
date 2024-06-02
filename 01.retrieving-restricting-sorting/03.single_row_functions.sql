@@ -12,3 +12,8 @@ FROM dual;
 SELECT INITCAP('Hello world')
 FROM dual;
 -- Hello World
+
+-- Concatenating strings
+SELECT CONCAT('Hello ', 'world')
+FROM dual;
+-- Hello world
