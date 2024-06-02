@@ -27,3 +27,8 @@ FROM dual;
 SELECT SUBSTR('Hello world', 2)
 FROM dual;
 -- ello world
+
+-- Getting a 4 characters long substring starting on the second character
+SELECT SUBSTR('Hello world', 2, 4)
+FROM dual;
+-- ello
