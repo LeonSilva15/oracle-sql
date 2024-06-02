@@ -17,3 +17,8 @@ FROM dual;
 SELECT CONCAT('Hello ', 'world')
 FROM dual;
 -- Hello world
+
+-- Concatenating more than two strings
+SELECT CONCAT(CONCAT('Hello', ' '), 'world')
+FROM dual;
+-- Hello world
