@@ -37,3 +37,8 @@ FROM dual;
 SELECT SUBSTR('Hello world', -1)
 FROM dual;
 -- d
+
+-- Getting the one previous to the last character
+SELECT SUBSTR('Hello world', -2, 1)
+FROM dual;
+-- l
