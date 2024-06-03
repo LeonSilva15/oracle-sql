@@ -32,3 +32,8 @@ FROM dual;
 SELECT SUBSTR('Hello world', 2, 4)
 FROM dual;
 -- ello
+
+-- Getting the last character
+SELECT SUBSTR('Hello world', -1)
+FROM dual;
+-- d
