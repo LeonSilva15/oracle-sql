@@ -47,3 +47,8 @@ FROM dual;
 SELECT LENGTH('Hello world')
 FROM dual;
 -- 11
+
+-- Getting the position of the first occurrence of a string
+SELECT INSTR('Hello world', 'or')
+FROM dual;
+-- 8
