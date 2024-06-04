@@ -52,3 +52,10 @@ FROM dual;
 SELECT INSTR('Hello world', 'or')
 FROM dual;
 -- 8
+
+-- Getting the position of the occurrence of a string
+-- starting on the third character
+-- the second occurrence
+SELECT INSTR('Hello world', 'o', 3, 2)
+FROM dual;
+-- 8
