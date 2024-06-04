@@ -42,3 +42,8 @@ FROM dual;
 SELECT SUBSTR('Hello world', -2, 1)
 FROM dual;
 -- l
+
+-- Getting the string length
+SELECT LENGTH('Hello world')
+FROM dual;
+-- 11
