@@ -66,3 +66,8 @@ FROM dual;
 SELECT INSTR('Hello world', 'l', -1, 3)
 FROM dual;
 -- 3
+
+-- Completing the string length from the left
+SELECT LPAD('Hello world', 15, '*')
+FROM dual;
+-- ****Hello world
