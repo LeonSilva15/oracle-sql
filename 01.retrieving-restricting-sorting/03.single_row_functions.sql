@@ -71,3 +71,8 @@ FROM dual;
 SELECT LPAD('Hello world', 15, '*')
 FROM dual;
 -- ****Hello world
+
+-- Completing the string length from the right
+SELECT RPAD('Hello world', 15, '*')
+FROM dual;
+-- Hello world****
