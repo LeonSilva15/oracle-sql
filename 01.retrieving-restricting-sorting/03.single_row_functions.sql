@@ -76,3 +76,8 @@ FROM dual;
 SELECT RPAD('Hello world', 15, '*')
 FROM dual;
 -- Hello world****
+
+-- Trimming a string
+SELECT TRIM('H' from 'Hello world')
+FROM dual;
+-- ello world
