@@ -91,3 +91,8 @@ FROM dual;
 SELECT TRIM(LEADING 'd' from 'dolly world')
 FROM dual;
 -- olly world
+
+-- Trimming trailing string
+SELECT TRIM(TRAILING 'd' from 'dolly world')
+FROM dual;
+-- dolly worl
