@@ -81,3 +81,8 @@ FROM dual;
 SELECT TRIM('H' from 'Hello world')
 FROM dual;
 -- ello world
+
+-- Trimming leading and trailing string
+SELECT TRIM('d' from 'dolly world')
+FROM dual;
+-- olly worl
