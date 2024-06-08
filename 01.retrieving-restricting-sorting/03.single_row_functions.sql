@@ -96,3 +96,8 @@ FROM dual;
 SELECT TRIM(TRAILING 'd' from 'dolly world')
 FROM dual;
 -- dolly worl
+
+-- Replacing the J's with Z's
+SELECT REPLACE('Jack and Jill', 'J', 'Z')
+FROM dual;
+-- Zack and Zill
