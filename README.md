@@ -17,14 +17,14 @@ These are my notes from the Oracle SQL 19c Workshop, content:
 - Managing Tables Using DML Statements in Oracle
 - Introduction to Data Definition Language in Oracle
 
-### User Access
-- Controlling User Access
-
 ### Views, Sequences, Synonyms, and Indexes
 - Introduction to Data Dictionary Views
 - Creating Sequences, Synonyms, and Indexes
 - Creating Views
 - Managing Schema Objects
+
+### User Access
+- Controlling User Access
 
 ### Advanced Queries
 - Manipulating Data Using Advanced Queries
