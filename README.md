@@ -1,5 +1,8 @@
 # Oracle SQL 19c Workshop
 
+**Recommended start:**  
+First, go through the [SQL Introduction](sql-introduction.md), then follow the files in order from 01 through 07.
+
 These are my notes from the Oracle SQL 19c Workshop, content:
 ### Retrieving, Restricting, and Sorting Data
 - Retrieving Data Using the SQL SELECT Statement
